@@ -1,7 +1,6 @@
 class Character {
-  int _health = 10;
+  String? name;
+  int health = 0;
 
-  int get health => _health;
-  set health(int val) => _health = val;
-
+  Character(this.name, this.health);
 }

@@ -1,9 +1,9 @@
-import 'package:learn_dart/character.dart';
+import 'package:learn_dart/hero.dart';
+import 'package:learn_dart/monster.dart';
 
 void main(List<String> args) {
-  Character c = Character();
+  Hero h = Hero('Indra Mahesa', 15);
+  Monster m = Monster('Goblin', 16);
 
-  print(c.health);
+  m.attackHero(h);
 }
-
-
