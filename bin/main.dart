@@ -8,4 +8,5 @@ void main(List<String> args) {
 
   h.shooting(m);
   h.attack(m);
+  h.heal();
 }
