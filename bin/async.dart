@@ -1,14 +1,14 @@
 void main(List<String> args) {
   print("Job 1");
   print("Job 2");
-  getDataThen();
+  getData().then((value) => print(value));
   print("Job 3");
   print("Job 4");
 }
 
-void getData() async {
+Future<String> getData() async {
   await Future.delayed(Duration(seconds: 3));
-  print("Done");
+  return "Data";
 }
 
 void getDataThen() {
